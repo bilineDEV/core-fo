@@ -38,7 +38,7 @@
 |
 */
 
-//$route['default_controller'] = "home";
+$route['default_controller'] = "officer";
 //$route['404_override']       = 'home/error404';
 
 $route['api/officer/login']                    	         = "officer/api/login";
