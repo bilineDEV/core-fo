@@ -38,7 +38,8 @@
 |
 */
 
-$route['default_controller'] = "officer";
+$route['default_controller']   = 'officer';
+$route['officer/(:num)']       = "officer/index/$1";
 //$route['404_override']       = 'home/error404';
 
 $route['api/officer/login']                    	         = "officer/api/login";
