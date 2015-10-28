@@ -34,13 +34,14 @@ class officer_model extends MY_Model {
                   ->result();
   }
 
-  public function get_an_officer_via_login($username, $password)
+  public function get_an_officer_via_login($userid, $username, $password)
   {
       return $this->db
                   ->select('officer_id, officer_name, branch_name')
                   ->from('tbl_officer')
                   ->join('tbl_branch', 'tbl_branch.branch_id = tbl_officer.officer_branch', 'left')
                   ->where('tbl_officer.deleted', '0')
+                  ->where('officer_id', $userid)
                   ->where('officer_username', $username)
                   ->where('officer_password', $password)
                   ->get()

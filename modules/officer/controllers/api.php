@@ -26,11 +26,13 @@ class Api extends Api_Controller {
       }
   }
 
+  //?userid=14&username=fo&password=amartha&key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea
   public function login()
   {
-      $username  = $this->input->post('user');
-      $password  = sha1($this->input->post('pass'));
-      $officer   = $this->officer->get_an_officer_via_login($username, $password);
+      $userid    = $this->input->post('userid');
+      $username  = $this->input->post('username');
+      $password  = sha1($this->input->post('password'));
+      $officer   = $this->officer->get_an_officer_via_login($userid, $username, $password);
 
       if($officer)
       {

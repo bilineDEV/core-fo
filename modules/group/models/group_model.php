@@ -37,7 +37,7 @@ class group_model extends MY_Model {
   public function get_groups_by_officer($officer_id)
   {
       return $this->db
-                  ->select('group_id, group_name, branch_name')
+                  ->select('group_id, group_name, group_tpl, branch_name')
                   ->from('tbl_group')
                   ->join('tbl_branch', 'tbl_branch.branch_id = tbl_group.group_branch', 'left')
                   ->where('tbl_group.deleted', '0')
