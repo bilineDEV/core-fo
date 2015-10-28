@@ -43,6 +43,10 @@ $route['officer/(:num)']       = "officer/index/$1";
 //$route['404_override']       = 'home/error404';
 
 $route['api/officer/login']                    	         = "officer/api/login";
+$route['api/client/get/(:num)']                          = "client/api/get_byofficer/$1";
+$route['api/client/officer/(:num)']                      = "client/api/get_byofficer/$1";
+$route['api/client/group/(:num)']                        = "client/api/get_bygroup/$1";
+
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	       = "$1/api/$2/$3";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)/(:any)']  = "$1/api/$2/$4";

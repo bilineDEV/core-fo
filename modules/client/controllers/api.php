@@ -10,7 +10,7 @@ class Api extends Api_Controller {
         $this->load->model('client/client_model', 'client');
   }
 
-  public function get($officer_id='')
+  public function get_byofficer($officer_id='')
   {
       if($officer_id==''||$officer_id==NULL)
       {
@@ -20,6 +20,21 @@ class Api extends Api_Controller {
       else
       {
         $clients = $this->client->get_clients_by_officer($officer_id);
+        $this->rest->set_data($clients);
+        $this->rest->render();
+      }
+  }
+
+  public function get_bygroup($group_id='')
+  {
+      if($group_id==''||$group_id==NULL)
+      {
+        $this->rest->set_error('Please specify a group id.');
+        $this->rest->render();
+      }
+      else
+      {
+        $clients = $this->client->get_clients_by_group($group_id);
         $this->rest->set_data($clients);
         $this->rest->render();
       }
