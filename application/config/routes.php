@@ -48,6 +48,7 @@ $route['api/login/officer']                              = "officer/api/login";
 $route['api/client/get/(:num)']                          = "client/api/get_byofficer/$1";
 $route['api/client/officer/(:num)']                      = "client/api/get_byofficer/$1";
 $route['api/client/group/(:num)']                        = "client/api/get_bygroup/$1";
+$route['api/client/detail/(:num)']                       = "client/api/detail/$1";
 $route['api/group/officer/(:num)']                       = "group/api/get/$1";
 
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
