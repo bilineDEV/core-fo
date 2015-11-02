@@ -40,6 +40,51 @@ class Api extends Api_Controller {
       }
   }
 
+  public function attendance($client_account='')
+  {
+      if($client_account==''||$client_account==NULL)
+      {
+        $this->rest->set_error('Please specify an account of client.');
+        $this->rest->render();
+      }
+      else
+      {
+        $client = $this->client->get_client_attendance_by_account($client_account);
+        $this->rest->set_data($client);
+        $this->rest->render();
+      }
+  }
+
+  public function balance($client_account='')
+  {
+      if($client_account==''||$client_account==NULL)
+      {
+        $this->rest->set_error('Please specify an account of client.');
+        $this->rest->render();
+      }
+      else
+      {
+        $client = $this->client->get_client_balance_by_account($client_account);
+        $this->rest->set_data($client);
+        $this->rest->render();
+      }
+  }
+
+  public function financing($client_account='')
+  {
+      if($client_account==''||$client_account==NULL)
+      {
+        $this->rest->set_error('Please specify an account of client.');
+        $this->rest->render();
+      }
+      else
+      {
+        $client = $this->client->get_client_financing_by_account($client_account);
+        $this->rest->set_data($client);
+        $this->rest->render();
+      }
+  }
+
   public function detail($client_account='')
   {
       if($client_account==''||$client_account==NULL)
