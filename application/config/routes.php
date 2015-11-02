@@ -55,5 +55,8 @@ $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	       = "$1/api/$2/$3";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)/(:any)']  = "$1/api/$2/$4";
 
+$route['topsheet/save_topsheet']       = "topsheet/save_topsheet";
+$route['api/topsheet/entry/']          = "topsheet/api/save_topsheet/";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
