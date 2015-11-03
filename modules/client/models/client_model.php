@@ -85,6 +85,7 @@ class client_model extends MY_Model {
   public function get_client_attendance_by_account($client_account)
   {
       return $this->db
+                  ->select('MAX(tbl_transaction.tr_angsuranke) as client_max_angsuranke')
                   ->select('SUM(tbl_transaction.tr_freq) as client_angsuranke')
                   ->select('SUM(tbl_transaction.tr_absen_h) as client_hadir, SUM(tbl_transaction.tr_absen_s) as client_sakit')
                   ->select('SUM(tbl_transaction.tr_absen_c) as client_cuti, SUM(tbl_transaction.tr_absen_i) as client_izin, SUM(tbl_transaction.tr_absen_a) as client_absen, SUM(tbl_transaction.tr_tanggungrenteng) as client_tanggungrenteng')
@@ -149,7 +150,7 @@ class client_model extends MY_Model {
       return $this->db
                   ->select('tbl_pembiayaan.data_id, tbl_pembiayaan.data_ke, tbl_pembiayaan.data_angsuranke, tbl_pembiayaan.data_plafond, tbl_pembiayaan.data_jangkawaktu, tbl_pembiayaan.data_totalangsuran, tbl_pembiayaan.data_angsuranpokok, tbl_pembiayaan.data_tabunganwajib, tbl_pembiayaan.data_margin, tbl_pembiayaan.data_sisaangsuran')
                   ->select('tbl_clients.client_id, tbl_clients.client_account, tbl_clients.client_fullname, tbl_clients.client_group, tbl_clients.client_officer')
-                  ->select('MAX(tbl_transaction.tr_angsuranke) as client_max_angsuranke')
+
                   ->select('SUM(tbl_transaction.tr_freq) as client_total_angsuranke')
                   ->select('SUM(tbl_transaction.tr_absen_h) as client_hadir, SUM(tbl_transaction.tr_absen_s) as client_sakit, SUM(tbl_transaction.tr_absen_c) as client_cuti, SUM(tbl_transaction.tr_absen_i) as client_izin, SUM(tbl_transaction.tr_absen_a) as client_absen, SUM(tbl_transaction.tr_tanggungrenteng) as client_tanggungrenteng')
                   ->select('tbl_tabwajib.tabwajib_saldo, tbl_tabsukarela.tabsukarela_saldo, tbl_tabberjangka.tabberjangka_saldo')
