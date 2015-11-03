@@ -40,6 +40,21 @@ class Api extends Api_Controller {
       }
   }
 
+   public function get_bygroup_in_detail($group_id='')
+   {
+      if($group_id==''||$group_id==NULL)
+      {
+        $this->rest->set_error('Please specify a group id.');
+        $this->rest->render();
+      }
+      else
+      {
+        $clients = $this->client->get_clients_in_details_by_group($group_id);
+        $this->rest->set_data($clients);
+        $this->rest->render();
+      }
+   }
+
   public function attendance($client_account='')
   {
       if($client_account==''||$client_account==NULL)
