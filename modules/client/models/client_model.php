@@ -40,8 +40,8 @@ class client_model extends MY_Model {
       return $this->db
                   ->select('tbl_pembiayaan.data_id, tbl_pembiayaan.data_ke, tbl_pembiayaan.data_angsuranke, tbl_pembiayaan.data_plafond')
                   ->select('tbl_pembiayaan.data_jangkawaktu, tbl_pembiayaan.data_totalangsuran, tbl_pembiayaan.data_angsuranpokok')
-                  ->select('tbl_pembiayaan.data_tabunganwajib, tbl_pembiayaan.data_margin, tbl_pembiayaan.data_sisaangsuran')
-                  ->select('tbl_clients.client_id, tbl_clients.client_account, tbl_clients.client_fullname, tbl_clients.client_group, tbl_clients.client_officer')
+                  ->select('tbl_pembiayaan.data_tabunganwajib, tbl_pembiayaan.data_margin, tbl_pembiayaan.data_sisaangsuran, tbl_pembiayaan.data_tr')
+                  ->select('tbl_clients.client_id, tbl_clients.client_account, tbl_clients.client_fullname, tbl_clients.client_group, tbl_clients.client_officer, tbl_clients.client_tr')
                   //->select('MAX(tbl_transaction.tr_angsuranke) as client_max_angsuranke')
                   //->select('SUM(tbl_transaction.tr_freq) as client_total_angsuranke')
                   //->select('SUM(tbl_transaction.tr_absen_h) as client_hadir, SUM(tbl_transaction.tr_absen_s) as client_sakit, SUM(tbl_transaction.tr_absen_c) as client_cuti')
