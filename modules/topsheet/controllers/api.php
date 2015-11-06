@@ -665,12 +665,15 @@ class Api extends Api_Controller {
 				
 				$this->db->trans_complete();
 
+				$timestamp = date("Y-m-d H:i:s");
 				$return = array(
-							'msg'    	 	=> "success"
+							'status'    	 	=> "success",
+							'saved'    	 		=> "$timestamp"
 						);	
 		}else{
 			$return = array(
-							'msg'    	 	=> "failed"
+							'status'    	 	=> "failed",
+							'saved'    	 		=> "0000-00-00 00:00:00"
 						);	
 		}
 		
