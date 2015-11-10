@@ -50,7 +50,7 @@ class client_model extends MY_Model {
                   //->select('SUM(tbl_transaction.tr_absen_h) as client_hadir, SUM(tbl_transaction.tr_absen_s) as client_sakit, SUM(tbl_transaction.tr_absen_c) as client_cuti')
                   //->select('SUM(tbl_transaction.tr_absen_i) as client_izin, SUM(tbl_transaction.tr_absen_a) as client_absen, SUM(tbl_transaction.tr_tanggungrenteng) as client_tanggungrenteng')
                   ->select('tbl_tabwajib.tabwajib_credit, tbl_tabwajib.tabwajib_debet, tbl_tabwajib.tabwajib_saldo, tbl_tabsukarela.tabsukarela_credit, tbl_tabsukarela.tabsukarela_debet, tbl_tabsukarela.tabsukarela_saldo')
-                  ->select('tbl_tabberjangka.tabberjangka_credit, tbl_tabberjangka.tabberjangka_debet, tbl_tabberjangka.tabberjangka_saldo')
+                  ->select('tbl_tabberjangka.tabberjangka_plafond,tbl_tabberjangka.tabberjangka_credit, tbl_tabberjangka.tabberjangka_debet, tbl_tabberjangka.tabberjangka_saldo')
                   ->from('tbl_clients')
                   ->join('tbl_pembiayaan', 'tbl_pembiayaan.data_id = tbl_clients.client_pembiayaan_id' , 'left')
                   ->join('tbl_group', 'tbl_group.group_id = tbl_clients.client_group', 'left')
