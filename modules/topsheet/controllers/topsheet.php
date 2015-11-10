@@ -667,17 +667,23 @@ class Topsheet extends Base_Controller {
 				
 				$timestamp = date("Y-m-d H:i:s");
 				$return = array(
+							'request_param'		=> "",
 							'status'    	 	=> "success",
-							'saved'    	 		=> "$timestamp"
+							'error_message'		=> "success",
+							'data'				=> array('saved' => "$timestamp")
 						);	
 		}else{
 			$return = array(
-							'status'    	 	=> "failed",
-							'saved'    	 		=> "0000-00-00 00:00:00"
+							'request_param'		=> "",
+							'status'    	 	=> "error",
+							'error_message'		=> "error",
+							'data'				=> array('saved' => "0000-00-00 00:00:00")
 						);	
 		}
 		
-		var_dump($return);
+		header('Cache-Control: no-cache, must-revalidate');
+        header('Content-type: application/json');
+		echo json_encode($return);
   }
 
 }

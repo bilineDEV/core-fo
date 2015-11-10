@@ -1,11 +1,13 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Api extends Api_Controller {
-	
-	
-	public function __construct() {
+class Topsheet extends Api_Controller {
+  public function __construct() {
         parent::__construct();
-		$this->load->model('group_model');
+        $this->load->model('officer/officer_model', 'officer');
+        $this->load->model('group/group_model', 'group'); 
+        $this->load->model('client/client_model', 'client');
+		
+		$this->load->model('topsheet/group_model');
 		$this->load->model('clients_model');
 		$this->load->model('officer_model');
 		$this->load->model('tsdaily_model');
@@ -22,12 +24,10 @@ class Api extends Api_Controller {
 		$this->load->model('tr_tabberjangka_model');
 		$this->load->model('jurnal_model');
 		$this->load->model('risk_model');
-	}
-	
+  }
 
-  
-	public function save_topsheet(){
-		$user_branch = $this->session->userdata('user_branch');	
+  public function save_topsheet(){
+       $user_branch = $this->input->post('user_branch');	
 		
 		//set form validation
 		$this->form_validation->set_rules('ts_date', 'Tanggal', 'required');
@@ -664,22 +664,24 @@ class Api extends Api_Controller {
 					}
 				
 				$this->db->trans_complete();
-
+				
 				$timestamp = date("Y-m-d H:i:s");
 				$return = array(
 							'status'    	 	=> "success",
 							'saved'    	 		=> "$timestamp"
-						);	
+						);
+				$this->rest->set_data($return);
+        		$this->rest->render();	
 		}else{
 			$return = array(
 							'status'    	 	=> "failed",
 							'saved'    	 		=> "0000-00-00 00:00:00"
 						);	
+			$this->rest->set_data($return);
+        	$this->rest->render();
 		}
 		
-		var_dump($return);
-	}
-	
-	
-	
+		//var_dump($return);
+  }
+
 }
