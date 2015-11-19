@@ -115,6 +115,7 @@ class client_model extends MY_Model {
       return $this->db
                   ->select('tbl_tabwajib.tabwajib_credit, tbl_tabwajib.tabwajib_debet, tbl_tabwajib.tabwajib_saldo')
                   ->select('tbl_tabsukarela.tabsukarela_credit, tbl_tabsukarela.tabsukarela_debet, tbl_tabsukarela.tabsukarela_saldo')
+                  ->select('tbl_tabberjangka.tabberjangka_plafond, tbl_tabberjangka.tabberjangka_angsuranke')
                   ->select('tbl_tabberjangka.tabberjangka_credit, tbl_tabberjangka.tabberjangka_debet, tbl_tabberjangka.tabberjangka_saldo')
                   ->from('tbl_clients')
                   ->join('tbl_tabwajib', 'tbl_tabwajib.tabwajib_account = tbl_clients.client_account', 'left')
