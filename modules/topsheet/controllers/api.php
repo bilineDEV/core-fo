@@ -1,6 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+<<<<<<< Updated upstream
 class Topsheet extends Api_Controller {
+=======
+class Topsheet extends Base_Controller {
+>>>>>>> Stashed changes
   public function __construct() {
         parent::__construct();
         $this->load->model('officer/officer_model', 'officer');
@@ -681,7 +685,11 @@ class Topsheet extends Api_Controller {
         	$this->rest->render();
 		}
 		
+<<<<<<< Updated upstream
 		//var_dump($return);
+=======
+		var_dump($return);
+>>>>>>> Stashed changes
   }
 
 }
