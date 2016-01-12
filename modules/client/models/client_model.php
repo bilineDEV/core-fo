@@ -107,7 +107,7 @@ class client_model extends MY_Model {
                   //->order_by('tbl_clients.client_officer', 'ASC')
                   ->limit('1,0')
                   ->get()
-                  ->result();
+                  ->row();
   }
 
     public function get_client_balance_by_account($client_account)

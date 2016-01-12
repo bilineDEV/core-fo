@@ -35,6 +35,20 @@ class Api extends Api_Controller {
       else
       {
         $clients = $this->client->get_clients_by_group($group_id);
+        $n       = 0;
+        foreach ($clients as $client) {
+          $attendances[$n]                           = (array) $this->client->get_client_attendance_by_account($client->client_account);
+          $clients[$n]                               = (array) $clients[$n];
+          $clients[$n]['client_max_angsuranke']      = $attendances[$n]['client_max_angsuranke'];
+          $clients[$n]['client_angsuranke']          = $attendances[$n]['client_angsuranke'];
+          $clients[$n]['client_hadir']               = $attendances[$n]['client_hadir'];
+          $clients[$n]['client_sakit']               = $attendances[$n]['client_sakit'];
+          $clients[$n]['client_cuti']                = $attendances[$n]['client_cuti'];
+          $clients[$n]['client_izin']                = $attendances[$n]['client_izin'];
+          $clients[$n]['client_absen']               = $attendances[$n]['client_absen'];
+          $clients[$n]['client_tanggungrenteng']     = $attendances[$n]['client_tanggungrenteng'];
+          $n++;
+        }
         $this->rest->set_data($clients);
         $this->rest->render();
       }
@@ -50,6 +64,20 @@ class Api extends Api_Controller {
       else
       {
         $clients = $this->client->get_clients_in_details_by_group($group_id);
+        $n       = 0;
+        foreach ($clients as $client) {
+          $attendances[$n]                           = (array) $this->client->get_client_attendance_by_account($client->client_account);
+          $clients[$n]                               = (array) $clients[$n];
+          $clients[$n]['client_max_angsuranke']      = $attendances[$n]['client_max_angsuranke'];
+          $clients[$n]['client_angsuranke']          = $attendances[$n]['client_angsuranke'];
+          $clients[$n]['client_hadir']               = $attendances[$n]['client_hadir'];
+          $clients[$n]['client_sakit']               = $attendances[$n]['client_sakit'];
+          $clients[$n]['client_cuti']                = $attendances[$n]['client_cuti'];
+          $clients[$n]['client_izin']                = $attendances[$n]['client_izin'];
+          $clients[$n]['client_absen']               = $attendances[$n]['client_absen'];
+          $clients[$n]['client_tanggungrenteng']     = $attendances[$n]['client_tanggungrenteng'];
+          $n++;
+        }
         $this->rest->set_data($clients);
         $this->rest->render();
       }
@@ -118,6 +146,7 @@ class Api extends Api_Controller {
   private function apikey()
   {
       return sha1('amArth4Micr0Financ3');
+      //?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea
       //$this->rest->set_data(array('sha' => sha1('amArth4Micr0Financ3')));
       //$this->rest->render();
   }
