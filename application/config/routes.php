@@ -53,8 +53,12 @@ $route['api/client/detail/(:num)']                       = "client/api/detail/$1
 $route['api/client/attendance/(:num)']                   = "client/api/attendance/$1";
 $route['api/client/balance/(:num)']                      = "client/api/balance/$1";
 $route['api/client/financing/(:num)']                    = "client/api/financing/$1";
+$route['api/client/financing/proposal/(:num)']           = "client/api/financing_proposal/$1";
 $route['api/group/officer/(:num)']                       = "group/api/get/$1";
 $route['api/group/all']                                  = "group/api/all";
+$route['api/pembiayaan/sector']                          = "pembiayaan/api/sector";
+$route['api/pembiayaan/register']                        = "pembiayaan/api/register";
+$route['api/pembiayaan/entry']                           = "pembiayaan/api/survey";
 $route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
 
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
@@ -62,6 +66,8 @@ $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	       = "$1/api/$2/$3";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)/(:any)']  = "$1/api/$2/$4";
 
 $route['topsheet/save_topsheet']       = "topsheet/save_topsheet";
+$route['pembiayaan/register']          = "pembiayaan/register";
+$route['pembiayaan/entry']      = "pembiayaan/entry";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
