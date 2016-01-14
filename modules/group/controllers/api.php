@@ -8,7 +8,13 @@ class Api extends Api_Controller {
         $this->load->model('officer/officer_model', 'officer');
         $this->load->model('group/group_model', 'group');
         $this->load->model('client/client_model', 'client');
-    }
+  }
+
+  public function all(){
+        $groups = $this->group->get_groups();
+        $this->rest->set_data($groups);
+        $this->rest->render();
+  }
 
   public function get($officer_id='')
   {

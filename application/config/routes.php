@@ -54,6 +54,7 @@ $route['api/client/attendance/(:num)']                   = "client/api/attendanc
 $route['api/client/balance/(:num)']                      = "client/api/balance/$1";
 $route['api/client/financing/(:num)']                    = "client/api/financing/$1";
 $route['api/group/officer/(:num)']                       = "group/api/get/$1";
+$route['api/group/all']                                  = "group/api/all";
 $route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
 
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
