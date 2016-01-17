@@ -43,30 +43,36 @@ $route['officer/(:num)']       = "officer/index/$1";
 $route['group/(:num)']         = "group/index/$1";
 //$route['404_override']       = 'home/error404';
 
+//Officer and Her Clients
 $route['api/officer/login']                    	         = "officer/api/login";
 $route['api/login/officer']                              = "officer/api/login";
 $route['api/client/get/(:num)']                          = "client/api/get_byofficer/$1";
 $route['api/client/officer/(:num)']                      = "client/api/get_byofficer/$1";
+//Client List based on group ID
 $route['api/client/group/(:num)']                        = "client/api/get_bygroup/$1";
 $route['api/client/financing_proposal/group/(:num)']     = "client/api/get_bygroup_proposal/$1";
+$route['api/client/financing/proposal/(:num)']           = "client/api/get_bygroup_proposal/$1";
 $route['api/clientdetailed/group/(:num)']                = "client/api/get_bygroup_in_detail/$1";
+$route['api/client/financing/(:num)']                    = "client/api/financing/$1";
+//Client Proile based on Her Account
 $route['api/client/detail/(:num)']                       = "client/api/detail/$1";
 $route['api/client/attendance/(:num)']                   = "client/api/attendance/$1";
 $route['api/client/balance/(:num)']                      = "client/api/balance/$1";
-$route['api/client/financing/(:num)']                    = "client/api/financing/$1";
-$route['api/client/financing/proposal/(:num)']           = "client/api/get_bygroup_proposal/$1";
 $route['api/group/officer/(:num)']                       = "group/api/get/$1";
 $route['api/group/all']                                  = "group/api/all";
 $route['api/pembiayaan/sector']                          = "pembiayaan/api/sector";
+
 //DISABLED
 $route['api/pembiayaan/register']                        = "pembiayaan/api/register";
 $route['api/pembiayaan/entry']                           = "pembiayaan/api/survey";
 $route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
 
+//DEFAULT API ROUTES
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	       = "$1/api/$2/$3";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)/(:any)']  = "$1/api/$2/$4";
 
+//POST API URI
 $route['topsheet/save_topsheet']                         = "topsheet/save_topsheet";
 $route['pembiayaan/register']                            = "pembiayaan/register";
 $route['pembiayaan/entry']                               = "pembiayaan/entry";
