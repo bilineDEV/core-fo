@@ -40,6 +40,23 @@ class client_model extends MY_Model {
                   ->result();
   }
 
+  public function get_proposing_clients_by_group($group_id)
+  {
+      return $this->db
+                  ->select('client_id, client_account, client_fullname, client_group, data_status, branch_name')
+                  ->from('tbl_clients')
+                  //->join('tbl_pembiayaan', 'tbl_pembiayaan.data_id = tbl_clients.client_pembiayaan_id' , 'left')
+                  ->join('tbl_branch', 'tbl_branch.branch_id = tbl_clients.client_branch', 'left')
+                  //->where('tbl_pembiayaan.data_status', '3')
+                  //->where('tbl_pembiayaan.deleted', '0')
+                  ->where('tbl_clients.client_status', '1')
+                  ->where('tbl_clients.deleted', '0')
+                  ->where('tbl_clients.client_group', $group_id)
+                  ->order_by('client_id', 'ASC')
+                  ->get()
+                  ->result();
+  }
+
     public function get_clients_in_details_by_group($group_id)
   {
       return $this->db

@@ -48,6 +48,7 @@ $route['api/login/officer']                              = "officer/api/login";
 $route['api/client/get/(:num)']                          = "client/api/get_byofficer/$1";
 $route['api/client/officer/(:num)']                      = "client/api/get_byofficer/$1";
 $route['api/client/group/(:num)']                        = "client/api/get_bygroup/$1";
+$route['api/client/financing_proposal/group/(:num)']     = "client/api/get_bygroup_proposal/$1";
 $route['api/clientdetailed/group/(:num)']                = "client/api/get_bygroup_in_detail/$1";
 $route['api/client/detail/(:num)']                       = "client/api/detail/$1";
 $route['api/client/attendance/(:num)']                   = "client/api/attendance/$1";
@@ -57,6 +58,7 @@ $route['api/client/financing/proposal/(:num)']           = "client/api/financing
 $route['api/group/officer/(:num)']                       = "group/api/get/$1";
 $route['api/group/all']                                  = "group/api/all";
 $route['api/pembiayaan/sector']                          = "pembiayaan/api/sector";
+//DISABLED
 $route['api/pembiayaan/register']                        = "pembiayaan/api/register";
 $route['api/pembiayaan/entry']                           = "pembiayaan/api/survey";
 $route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
@@ -65,9 +67,9 @@ $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	       = "$1/api/$2/$3";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)/(:any)']  = "$1/api/$2/$4";
 
-$route['topsheet/save_topsheet']       = "topsheet/save_topsheet";
-$route['pembiayaan/register']          = "pembiayaan/register";
-$route['pembiayaan/entry']      = "pembiayaan/entry";
+$route['topsheet/save_topsheet']                         = "topsheet/save_topsheet";
+$route['pembiayaan/register']                            = "pembiayaan/register";
+$route['pembiayaan/entry']                               = "pembiayaan/entry";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

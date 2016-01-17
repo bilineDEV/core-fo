@@ -16,6 +16,7 @@ class Pembiayaan extends Base_Controller {
   Notes:
   Bila dari API ada data_ke = 3, maka pengajuan kali ini dicatat sebagai client_pembiayaanke = 4 (Pengajuan)
   */
+
   public function register(){
         $client_reg   = $this->input->post("client_reg");
         if($client_reg == "1")

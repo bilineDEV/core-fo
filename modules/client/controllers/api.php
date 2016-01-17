@@ -54,8 +54,39 @@ class Api extends Api_Controller {
       }
   }
 
-   public function get_bygroup_in_detail($group_id='')
-   {
+  public function get_bygroup_proposal($group_id)
+  {
+      if($group_id==''||$group_id==NULL)
+      {
+        $this->rest->set_error('Please specify a group id.');
+        $this->rest->render();
+      }
+      else
+      {
+        $clients = $this->client->get_proposing_clients_by_group($group_id);
+        //echo $group_id;
+        //var_dump($clients); die();
+        $n       = 0;
+        foreach ($clients as $client) {
+          $attendances[$n]                           = (array) $this->client->get_client_attendance_by_account($client->client_account);
+          $clients[$n]                               = (array) $clients[$n];
+          $clients[$n]['client_max_angsuranke']      = $attendances[$n]['client_max_angsuranke'];
+          $clients[$n]['client_angsuranke']          = $attendances[$n]['client_angsuranke'];
+          $clients[$n]['client_hadir']               = $attendances[$n]['client_hadir'];
+          $clients[$n]['client_sakit']               = $attendances[$n]['client_sakit'];
+          $clients[$n]['client_cuti']                = $attendances[$n]['client_cuti'];
+          $clients[$n]['client_izin']                = $attendances[$n]['client_izin'];
+          $clients[$n]['client_absen']               = $attendances[$n]['client_absen'];
+          $clients[$n]['client_tanggungrenteng']     = $attendances[$n]['client_tanggungrenteng'];
+          $n++;
+        }
+        $this->rest->set_data($clients);
+        $this->rest->render();
+      }
+  }
+
+  public function get_bygroup_in_detail($group_id='')
+  {
       if($group_id==''||$group_id==NULL)
       {
         $this->rest->set_error('Please specify a group id.');
