@@ -64,8 +64,6 @@ class Api extends Api_Controller {
       else
       {
         $clients = $this->client->get_proposing_clients_by_group($group_id);
-        //echo $group_id;
-        //var_dump($clients); die();
         $n       = 0;
         foreach ($clients as $client) {
           $attendances[$n]                           = (array) $this->client->get_client_attendance_by_account($client->client_account);
