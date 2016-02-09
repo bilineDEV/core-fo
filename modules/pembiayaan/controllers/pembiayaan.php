@@ -21,7 +21,8 @@ class Pembiayaan extends Base_Controller {
     //set form validation
     //$this->form_validation->set_rules('ts_date', 'Tanggal', 'required');
     //$this->form_validation->set_rules('ts_freq', 'Pertemuan ke', 'required');
-    if($this->form_validation->run() === TRUE){
+    //
+    if(true){//$this->form_validation->run() === TRUE
 
         $client_reg   = $this->input->post("client_reg");
         if($client_reg == "1")
