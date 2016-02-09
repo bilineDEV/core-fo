@@ -110,10 +110,10 @@ class Pembiayaan extends Base_Controller {
   }
 
   public function entry(){
-         //set form validation
-        $this->form_validation->set_rules('ts_date', 'Tanggal', 'required');
+        //set form validation
+        //$this->form_validation->set_rules('ts_date', 'Tanggal', 'required');
         //$this->form_validation->set_rules('ts_freq', 'Pertemuan ke', 'required');
-        if($this->form_validation->run() === TRUE)
+        if( $this->input->post() ) //$this->form_validation->run() === TRUE
         {
 
                 $id = $this->input->post('data_id');
@@ -344,7 +344,7 @@ class Pembiayaan extends Base_Controller {
                     'data_pendapatan_istrilama'       => $this->input->post('data_pendapatan_istrilama'),
                     'data_pendapatan_lain'            => $this->input->post('data_pendapatan_lain'),
                     'data_pendapatan_lainjenisusaha'  => $this->input->post('data_pendapatan_lainjenisusaha'),
-                    'data_pendapatan_lainlama'        => $this->input->post(' data_pendapatan_lainlama'),
+                    'data_pendapatan_lainlama'        => $this->input->post('data_pendapatan_lainlama'),
                     'data_pendapatan_total'           => $this->input->post('data_pendapatan_total'),
 
                     'data_pengeluaran_dapur'          => $this->input->post('data_pengeluaran_dapur'),

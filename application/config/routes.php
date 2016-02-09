@@ -68,8 +68,8 @@ $route['api/pembiayaan/entry']                           = "pembiayaan/api/surve
 $route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
 
 //DEFAULT API ROUTES
-$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
-$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	       = "$1/api/$2/$3";
+$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			     = "$1/api/$2";
+$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	     = "$1/api/$2/$3";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)/(:any)']  = "$1/api/$2/$4";
 
 //POST API URI
