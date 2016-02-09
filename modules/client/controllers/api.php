@@ -96,15 +96,18 @@ class Api extends Api_Controller {
         $n       = 0;
         foreach ($clients as $client) {
           $attendances[$n]                           = (array) $this->client->get_client_attendance_by_account($client->client_account);
+          //$att[$n]                                 = $attendances[$n][0];
+          //echo '<br/><br/>'.$att[$n]->client_hadir.'<br/>';
           $clients[$n]                               = (array) $clients[$n];
-          $clients[$n]['client_max_angsuranke']      = $attendances[$n]['client_max_angsuranke'];
-          $clients[$n]['client_angsuranke']          = $attendances[$n]['client_angsuranke'];
-          $clients[$n]['client_hadir']               = $attendances[$n]['client_hadir'];
-          $clients[$n]['client_sakit']               = $attendances[$n]['client_sakit'];
-          $clients[$n]['client_cuti']                = $attendances[$n]['client_cuti'];
-          $clients[$n]['client_izin']                = $attendances[$n]['client_izin'];
-          $clients[$n]['client_absen']               = $attendances[$n]['client_absen'];
-          $clients[$n]['client_tanggungrenteng']     = $attendances[$n]['client_tanggungrenteng'];
+          $clients[$n]['client_max_angsuranke']      = $attendances[$n][0]->client_total_angsuranke;
+          $clients[$n]['client_angsuranke']          = $attendances[$n][0]->client_angsuranke;
+          $clients[$n]['client_hadir']               = $attendances[$n][0]->client_hadir;
+          $clients[$n]['client_sakit']               = $attendances[$n][0]->client_sakit;
+          $clients[$n]['client_cuti']                = $attendances[$n][0]->client_cuti;
+          $clients[$n]['client_izin']                = $attendances[$n][0]->client_izin;
+          $clients[$n]['client_absen']               = $attendances[$n][0]->client_absen;
+          $clients[$n]['client_tanggungrenteng']     = $attendances[$n][0]->client_tanggungrenteng;
+          //var_dump($clients[0]); die();
           $n++;
         }
         $this->rest->set_data($clients);
