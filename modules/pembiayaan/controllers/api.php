@@ -22,7 +22,7 @@ class Api extends Api_Controller {
         if($client_reg == "1")
         {
 
-          $client_id = $this->input->post("client_name");
+          $client_id = $this->input->post("client_id");
           $plafond   = $this->input->post("client_plafond");
           $plafond   = str_replace(".", "", $plafond);
 
@@ -34,8 +34,9 @@ class Api extends Api_Controller {
             )
           {
             //INSERT PEMBIAYAAN
+			
             $data_pembiayaan = array(
-                  'data_client'       => $this->input->post("client_name"),
+                  'data_client'       => $client_id,
                   'data_tgl'          => $this->input->post("client_pengajuan_date"),
                   'data_date_accept'  => $this->input->post("client_pencairan_date"),
                   'data_plafond'      => $plafond,
@@ -44,18 +45,32 @@ class Api extends Api_Controller {
                   'data_sector'       => $this->input->post("client_sector"),
                   'data_ke'           => $this->input->post("client_pembiayaanke"),
                   'data_status'       => '2',
-                  'data_jangkawaktu'  => '50'
+                  'data_jangkawaktu'  => $this->input->post("client_tenor"),
             );
-            $this->client_pembiayaan_model->insert($data_pembiayaan);
-
-            //UPDATE n-th PEMBIAYAAN di table CLIENT
-            $timestamp=date("Y-m-d H:i:s");
-            $data_client = array(
-                  'client_pembiayaan' => $this->input->post("client_pembiayaanke")
-            );
-            $this->client_model->update_pembiayaan($client_id, $data_client);
-          }
-        }
+			$this->db->trans_start();
+				//INSERT pengajuan di tbl_pembiayaan
+				$this->client_pembiayaan_model->insert($data_pembiayaan);
+				$pembiayaan_id = $this->db->insert_id();
+				$data_id = array( 'data_id' => $pembiayaan_id );		
+				$this->rest->set_data($data_pembiayaan);
+				$this->rest->set_requestparam($data_id);
+				
+				//UPDATE n-th PEMBIAYAAN di table CLIENT
+				$timestamp=date("Y-m-d H:i:s");
+				$data_client = array(
+					  'client_pembiayaan' => $this->input->post("client_pembiayaanke"),
+					  'client_pembiayaan_id' => $pembiayaan_id
+				);
+				$this->client_model->update_pembiayaan($client_id, $data_client);
+			$this->db->trans_complete();
+          }else{
+			  $this->rest->set_error('Missing Parameters');
+		  }
+        }else{
+			$this->rest->set_error('Missing Flag Registration');
+		}		
+		
+		$this->rest->render();
   }
 
   public function sector(){
