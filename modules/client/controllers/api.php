@@ -25,6 +25,21 @@ class Api extends Api_Controller {
       }
   }
 
+  public function get_pembiayaan_byofficer($officer_id='')
+  {
+      if($officer_id==''||$officer_id==NULL)
+      {
+        $this->rest->set_error('Please specify an officer id.');
+        $this->rest->render();
+      }
+      else
+      {
+        $clients = $this->client->get_clients_pembiayaan_by_officer($officer_id);
+        $this->rest->set_data($clients);
+        $this->rest->render();
+      }
+  }
+
   public function get_bygroup($group_id='')
   {
       if($group_id==''||$group_id==NULL)

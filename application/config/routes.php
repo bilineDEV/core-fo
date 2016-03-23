@@ -48,6 +48,7 @@ $route['api/officer/login']                    	         = "officer/api/login";
 $route['api/login/officer']                              = "officer/api/login";
 $route['api/client/get/(:num)']                          = "client/api/get_byofficer/$1";
 $route['api/client/officer/(:num)']                      = "client/api/get_byofficer/$1";
+$route['api/client_pembiayaan/officer/(:num)']           = "client/api/get_pembiayaan_byofficer/$1";
 //Client List based on group ID
 $route['api/client/group/(:num)']                        = "client/api/get_bygroup/$1";
 $route['api/client/financing_proposal/group/(:num)']     = "client/api/get_bygroup_proposal/$1";

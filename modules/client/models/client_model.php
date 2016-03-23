@@ -107,6 +107,22 @@ class client_model extends MY_Model {
                   ->result();
   }
 
+  public function get_clients_pembiayaan_by_officer($officer_id)
+  {
+      return $this->db
+                  ->select('client_id, client_account, client_fullname, client_group, branch_name, data_status_pengajuan')
+                  ->from('tbl_clients')
+                  ->join('tbl_branch', 'tbl_branch.branch_id = tbl_clients.client_branch', 'left')
+                  ->join('tbl_pembiayaan', 'tbl_pembiayaan.data_client = tbl_clients.client_id', 'left')
+                  ->where('tbl_clients.client_status', '1')
+                  ->where('tbl_clients.deleted', '0')
+                  ->where('tbl_clients.client_officer', $officer_id)
+                  ->where('tbl_pembiayaan.data_status', '2')
+                  ->order_by('client_id', 'ASC')
+                  ->get()
+                  ->result();
+  }
+
   public function get_client_attendance_by_account($client_account)
   {
       return $this->db
