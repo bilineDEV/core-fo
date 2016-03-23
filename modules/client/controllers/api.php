@@ -35,9 +35,6 @@ class Api extends Api_Controller {
       else
       {
         $clients = $this->client->get_clients_pembiayaan_by_officer($officer_id);
-        echo $this->db->last_query(); 
-        echo '<br/><br/>';
-        var_dump($clients);
         die();
         $this->rest->set_data($clients);
         $this->rest->render();
