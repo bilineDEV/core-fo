@@ -36,6 +36,17 @@ class group_model extends MY_Model {
 
   public function get_groups_by_officer($officer_id)
   {
+      $sql = "
+              select distinct group_id, group_name, client_officer as group_tpl, branch_name from
+              (select group_id, group_name, group_tpl, client_id, client_officer, branch_name
+              from tbl_group
+              inner join tbl_clients on client_group = group_id 
+              inner join tbl_branch on branch_id = tbl_group.group_branch
+              where tbl_group.deleted = 0 and tbl_clients.client_officer = ".$officer_id.")
+              as tabel_group_officer
+            ";
+      return $this->db->query($sql)->result();
+      /*
       return $this->db
                   ->select('group_id, group_name, group_tpl, branch_name')
                   ->from('tbl_group')
@@ -45,6 +56,7 @@ class group_model extends MY_Model {
                   ->order_by('group_id', 'ASC')
                   ->get()
                   ->result();
+      */
   }
 
   public function get_clients_by_group($group_id)
