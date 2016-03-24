@@ -90,9 +90,10 @@ class officer_model extends MY_Model {
       return $this->db
                   ->select('client_id, client_account, client_fullname, branch_name')
                   ->from('tbl_clients')
+                  ->join('tbl_group', 'tbl_group.group_id = tbl_clients.client_group', 'left')
                   ->join('tbl_branch', 'tbl_branch.branch_id = tbl_clients.client_branch', 'left')
                   ->where('tbl_clients.deleted', '0')
-                  ->where('tbl_clients.client_officer', $officer_id)
+                  ->where('tbl_group.group_tpl', $officer_id)
                   ->order_by('client_id', 'ASC')
                   ->get()
                   ->result();

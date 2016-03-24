@@ -8,6 +8,12 @@
  * @since   26 Oktober 2015
  */
 
+// BEWARE: DO NOT USE CLIENT_OFFICER in TBL_CLIENTS, but USE GROUP_TPL in TBL_GROUP instead
+/*
+   ->join('tbl_group', 'tbl_group.group_id = tbl_clients.client_group', 'left')
+   ->where('tbl_group.group_tpl', $officer_id)
+*/
+
 class client_model extends MY_Model {
 
   public function get_a_client($id)
@@ -99,9 +105,10 @@ class client_model extends MY_Model {
                   ->select('client_id, client_account, client_fullname, client_group, branch_name')
                   ->from('tbl_clients')
                   ->join('tbl_branch', 'tbl_branch.branch_id = tbl_clients.client_branch', 'left')
+                  ->join('tbl_group', 'tbl_group.group_id = tbl_clients.client_group', 'left')
                   ->where('tbl_clients.client_status', '1')
                   ->where('tbl_clients.deleted', '0')
-                  ->where('tbl_clients.client_officer', $officer_id)
+                  ->where('tbl_group.group_tpl', $officer_id)
                   ->order_by('client_id', 'ASC')
                   ->get()
                   ->result();
@@ -114,9 +121,10 @@ class client_model extends MY_Model {
                   ->from('tbl_clients')
                   ->join('tbl_branch', 'tbl_branch.branch_id = tbl_clients.client_branch', 'left')
                   ->join('tbl_pembiayaan', 'tbl_pembiayaan.data_client = tbl_clients.client_id', 'left')
+                  ->join('tbl_group', 'tbl_group.group_id = tbl_clients.client_group', 'left')
                   ->where('tbl_clients.client_status', '1')
                   ->where('tbl_clients.deleted', '0')
-                  ->where('tbl_clients.client_officer', $officer_id)
+                  ->where('tbl_group.group_tpl', $officer_id)
                   ->where('tbl_pembiayaan.data_status', '2')
                   ->order_by('client_id', 'ASC')
                   ->get()
