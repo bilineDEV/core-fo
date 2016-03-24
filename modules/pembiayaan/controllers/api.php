@@ -52,7 +52,7 @@ class Api extends Api_Controller {
     				//INSERT pengajuan di tbl_pembiayaan (PEMBIAYAAN)
     				$this->client_pembiayaan_model->insert($data_pembiayaan);
     				$pembiayaan_id = $this->db->insert_id();
-            $data_id       = $pembiayaan_id;//$data_id = array( 'data_id' => $pembiayaan_id );	
+            $data_id       = "'".$pembiayaan_id."'";//$data_id = array( 'data_id' => $pembiayaan_id );	
     				$this->rest->set_data($data_pembiayaan);
     				$this->rest->set_requestparam($data_id);
     				
