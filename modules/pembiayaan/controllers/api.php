@@ -53,7 +53,7 @@ class Api extends Api_Controller {
     				$this->client_pembiayaan_model->insert($data_pembiayaan);
     				$pembiayaan_id              = $this->db->insert_id();
             $data_pembiayaan['data_id'] = $pembiayaan_id;
-    				$this->rest->set_data($data_pembiayaan);
+    				$this->rest->set_data( (Object) $data_pembiayaan );
     				
     				//UPDATE n-th PEMBIAYAAN SEORANG CLIENT di tbl_client (CLIENT)
     				$timestamp=date("Y-m-d H:i:s");
