@@ -205,6 +205,21 @@ class Api extends Api_Controller {
       }
   }
 
+  public function simpledetail($client_account='')
+  {
+      if($client_account==''||$client_account==NULL)
+      {
+        $this->rest->set_error('Please specify an account of client.');
+        $this->rest->render();
+      }
+      else
+      {
+        $client = $this->client->get_client_simpledetails_by_account($client_account);
+        $this->rest->set_data($client);
+        $this->rest->render();
+      }
+  }
+
   private function apikey()
   {
       return sha1('amArth4Micr0Financ3');

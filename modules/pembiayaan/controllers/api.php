@@ -34,7 +34,7 @@ class Api extends Api_Controller {
             )
           {
             //INSERT PEMBIAYAAN
-			
+
             $data_pembiayaan = array(
                   'data_client'       => $client_id,
                   'data_tgl'          => $this->input->post("client_pengajuan_date"),
@@ -52,10 +52,10 @@ class Api extends Api_Controller {
     				//INSERT pengajuan di tbl_pembiayaan (PEMBIAYAAN)
     				$this->client_pembiayaan_model->insert($data_pembiayaan);
     				$pembiayaan_id              = $this->db->insert_id();
-            $data_pembiayaan['data_id'] = $pembiayaan_id;
-            $data_pembiayaan            = (object) $data_pembiayaan;
+                    $data_pembiayaan['data_id'] = $pembiayaan_id;
+                    $data_pembiayaan            = (object) $data_pembiayaan;
     				$this->rest->set_data($data_pembiayaan);
-    				
+
     				//UPDATE n-th PEMBIAYAAN SEORANG CLIENT di tbl_client (CLIENT)
     				$timestamp=date("Y-m-d H:i:s");
     				$data_client = array(
@@ -74,8 +74,8 @@ class Api extends Api_Controller {
         else
         {
 			   $this->rest->set_error('Missing Flag Registration');
-		    }		
-		
+		    }
+
 		$this->rest->render();
   }
 

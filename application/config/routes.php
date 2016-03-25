@@ -55,28 +55,28 @@ $route['api/client/financing_proposal/group/(:num)']     = "client/api/get_bygro
 $route['api/client/financing/proposal/(:num)']           = "client/api/get_bygroup_proposal/$1";
 $route['api/clientdetailed/group/(:num)']                = "client/api/get_bygroup_in_detail/$1";
 $route['api/client/financing/(:num)']                    = "client/api/financing/$1";
-//Client Proile based on Her Account
-$route['api/client/detail/(:num)']                       = "client/api/detail/$1";
+//Client Profile based on Her Account
+$route['api/client/detail/(:num)']                       = "client/api/detail/$1"; //For all active clients with pembiayaan status = 1
+$route['api/client/simpledetail/(:num)']                 = "client/api/simpledetail/$1"; //For all active clients with any pembiayaan status
 $route['api/client/attendance/(:num)']                   = "client/api/attendance/$1";
 $route['api/client/balance/(:num)']                      = "client/api/balance/$1";
+$route['api/pembiayaan/sector']                          = "pembiayaan/api/sector";
+//Clients based on Their Respective Group
 $route['api/group/officer/(:num)']                       = "group/api/get/$1";
 $route['api/group/all']                                  = "group/api/all";
-$route['api/pembiayaan/sector']                          = "pembiayaan/api/sector";
-
-//DISABLED
-$route['api/pembiayaan/register']                        = "pembiayaan/api/register";
-$route['api/pembiayaan/entry']                           = "pembiayaan/api/survey";
-$route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
 
 //DEFAULT API ROUTES
-$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			     = "$1/api/$2";
-$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	     = "$1/api/$2/$3";
+$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)']			           = "$1/api/$2";
+$route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)']	       = "$1/api/$2/$3";
 $route['api/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)/(:any)']  = "$1/api/$2/$4";
 
 //POST API URI
 $route['topsheet/save_topsheet']                         = "topsheet/save_topsheet";
 $route['pembiayaan/register']                            = "pembiayaan/register";
 $route['pembiayaan/entry']                               = "pembiayaan/entry";
+//$route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
+$route['api/pembiayaan/register']                        = "pembiayaan/api/register";
+$route['api/pembiayaan/entry']                           = "pembiayaan/api/survey";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
