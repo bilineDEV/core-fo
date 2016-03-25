@@ -220,6 +220,21 @@ class Api extends Api_Controller {
       }
   }
 
+  public function residence($client_id='')
+  {
+      if($client_id==''||$client_id==NULL)
+      {
+        $this->rest->set_error('Please specify an ID of client.');
+        $this->rest->render();
+      }
+      else
+      {
+        $client = $this->client->get_client_residence_by_id($client_id);
+        $this->rest->set_data($client);
+        $this->rest->render();
+      }
+  }
+
   private function apikey()
   {
       return sha1('amArth4Micr0Financ3');

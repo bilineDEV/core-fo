@@ -249,6 +249,22 @@ class client_model extends MY_Model {
                     ->result();
   }
 
+  public function get_client_residence_by_id($client_id)
+  {
+         return $this->db
+                     ->select('tbl_area.area_name, tbl_branch.branch_name, tbl_clients.client_group, tbl_group.group_name, tbl_clients.client_account, tbl_group.group_tpl, tbl_officer.officer_name, tbl_clients.client_fullname, tbl_clients.client_simplename')
+                     ->select('tbl_clients.client_birthdate, tbl_clients.client_birthplace, tbl_clients.client_martialstatus, tbl_clients.client_rt, tbl_clients.client_rw, tbl_clients.client_kampung, tbl_clients.client_desa, tbl_clients.client_kecamatan')
+                     ->select('tbl_clients.client_ktp, tbl_clients.client_religion, tbl_clients.client_education, tbl_clients.client_job, tbl_clients.client_comodity')
+                     ->from('tbl_clients')
+                     ->join('tbl_group', 'tbl_group.group_id = tbl_clients.client_group', 'left')
+                     ->join('tbl_branch', 'tbl_branch.branch_id = tbl_clients.client_branch', 'left')
+                     ->join('tbl_area', 'tbl_area.area_id = tbl_branch.branch_area', 'left')
+                     ->join('tbl_officer', 'tbl_officer.officer_id = tbl_group.group_tpl', 'left')
+                     ->where('tbl_clients.client_id', $client_id)
+                     ->get()
+                     ->result();
+  }
+
   public function get_client_simpledetails_by_account($client_account)
   {
          return $this->db

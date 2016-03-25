@@ -61,6 +61,9 @@ $route['api/client/simpledetail/(:num)']                 = "client/api/simpledet
 $route['api/client/attendance/(:num)']                   = "client/api/attendance/$1";
 $route['api/client/balance/(:num)']                      = "client/api/balance/$1";
 $route['api/pembiayaan/sector']                          = "pembiayaan/api/sector";
+//Client Family & Residential Profile based on Her ID
+$route['api/client/residence/(:num)']                    = "client/api/residence/$1";
+//$route['api/client/family/(:num)']                     = "client/api/family/$1";
 //Clients based on Their Respective Group
 $route['api/group/officer/(:num)']                       = "group/api/get/$1";
 $route['api/group/all']                                  = "group/api/all";

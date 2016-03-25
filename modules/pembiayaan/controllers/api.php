@@ -339,6 +339,7 @@ class Api extends Api_Controller {
                                 'error_message'     => "success",
                                 'data'              => array('saved' => "$timestamp", 'action' => "insert pembiayaan data.")
                             );
+                            $this->rest->set_data($return);
                     }else{
                             $return = array(
                                 'request_param'     => "",
@@ -346,6 +347,8 @@ class Api extends Api_Controller {
                                 'error_message'     => "error",
                                 'data'              => array('saved' => "0000-00-00 00:00:00", 'action' => "insert client pembiayaan data: fails.")
                             );
+                            //$this->rest->set_data($return);
+                             $this->rest->set_error('Insert client pembiayaan data: fails.');
                     }
                 }
                 else
@@ -359,6 +362,7 @@ class Api extends Api_Controller {
                                 'error_message'     => "success",
                                 'data'              => array('saved' => "$timestamp", 'action' => "update pembiayaan data.")
                             );
+                            $this->rest->set_data($return);
                     }else{
                             $return = array(
                                 'request_param'     => "",
@@ -366,6 +370,8 @@ class Api extends Api_Controller {
                                 'error_message'     => "error",
                                 'data'              => array('saved' => "0000-00-00 00:00:00", 'action' => "update client pembiayaan data: fails.")
                             );
+                            //$this->rest->set_data($return);
+                            $this->rest->set_error('Update client pembiayaan data: fails.');
                     }
                 }
         }
@@ -377,11 +383,14 @@ class Api extends Api_Controller {
                                         'error_message'     => "error",
                                         'data'              => array('saved' => "0000-00-00 00:00:00", 'action' => "validation in data registration: validation fails.")
                             );
+                    //$this->rest->set_data($return);
+                    $this->rest->set_error('Validation in data registration: validation fails.');
         }
 
-        header('Cache-Control: no-cache, must-revalidate');
-        header('Content-type: application/json');
-        echo json_encode($return);
+        //header('Cache-Control: no-cache, must-revalidate');
+        //header('Content-type: application/json');
+        //echo json_encode($return);
+        $this->rest->render();
 
   }
 
