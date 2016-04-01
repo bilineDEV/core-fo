@@ -313,6 +313,7 @@ class Api extends Api_Controller {
                     'data_pendapatan_lainlama'        => $this->input->post('data_pendapatan_lainlama'),
                     'data_pendapatan_total'           => $this->input->post('data_pendapatan_total'),
 
+                    'data_pengeluaran_beras'          => $this->input->post('data_pengeluaran_beras'),
                     'data_pengeluaran_dapur'          => $this->input->post('data_pengeluaran_dapur'),
                     'data_pengeluaran_rekening'       => $this->input->post('data_pengeluaran_rekening'),
                     'data_pengeluaran_pulsa'          => $this->input->post('data_pengeluaran_pulsa'),
