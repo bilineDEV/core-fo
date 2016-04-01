@@ -79,7 +79,7 @@ $route['pembiayaan/register']                            = "pembiayaan/register"
 $route['pembiayaan/entry']                               = "pembiayaan/entry";
 //$route['api/topsheet/entry/']                            = "topsheet/api/save_topsheet/";
 $route['api/pembiayaan/register']                        = "pembiayaan/api/register";
-$route['api/pembiayaan/entry']                           = "pembiayaan/api/survey";
+$route['api/pembiayaan/survey']                          = "pembiayaan/api/survey";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

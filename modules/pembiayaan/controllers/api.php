@@ -79,7 +79,7 @@ class Api extends Api_Controller {
 		$this->rest->render();
   }
 
-  public function entry(){
+  public function survey(){
         if( $this->input->post() )
         {
 
