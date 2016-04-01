@@ -1,0 +1,2423 @@
+{
+	"id": "f47df37a-7e3e-b220-7cc7-b8dc3451d0ff",
+	"name": "Amartha API REST Client",
+	"description": "",
+	"order": [
+		"a74750e2-996d-1f97-63d2-6d1f089f1f1f",
+		"ca8df745-4dc2-8f60-7c58-7325091e3949",
+		"879e49b6-6c32-0618-42a7-b525e8de7700",
+		"6e282b4a-fe02-7125-10f5-4b2f52e27394"
+	],
+	"folders": [],
+	"timestamp": 1459435426019,
+	"owner": "233817",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "6e282b4a-fe02-7125-10f5-4b2f52e27394",
+			"headers": "",
+			"url": "http://localhost/amartha-fo/index.php/api/pembiayaan/survey?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f47df37a-7e3e-b220-7cc7-b8dc3451d0ff",
+			"data": [
+				{
+					"key": "data_id",
+					"value": "21492",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_ke",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengajuan",
+					"value": "10000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tgl",
+					"value": "2016-04-20",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_date_accept",
+					"value": "2016-04-27",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tujuan",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_plafond",
+					"value": "2000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_jangkawaktu",
+					"value": "25",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_akad",
+					"value": "AHA",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_status",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_sector",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami",
+					"value": "Andi",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_tgllahir",
+					"value": "1990-02-03",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pekerjaan",
+					"value": "Buruh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_komoditas",
+					"value": "Bangunan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pendidikan",
+					"value": "SMP",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_anak",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_belumsekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tk",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaksekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaktamatsd",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sd",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_smp",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sma",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_kuliah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tanggungan",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_anggotart",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_masihsekolah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pendidikanistri",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pekerjaansuami",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jeniswc",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_bahanbakar",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_gas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_kulkas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_motor",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_ukuranrumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kondisirumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisatap",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisdinding",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_listrik",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_sumberair",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kepemilikan",
+					"value": "Milik Sendiri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_hargaperbulan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lahan",
+					"value": "Sawah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahlahan",
+					"value": "1000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_ternak",
+					"value": "Ayam",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahternak",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_tabungan",
+					"value": "500000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_deposito",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lain",
+					"value": "40000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_total",
+					"value": "540000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamilama",
+					"value": "2 Tahun",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suami",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istri",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrilama",
+					"value": "5 Bulan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainjenisusaha",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainlama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_total",
+					"value": "150000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_dapur",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_rekening",
+					"value": "20000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pulsa",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_kreditan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_arisan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pendidikan",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_umum",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_angsuranlain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_total",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_savingpower",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_client",
+					"value": "16187",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://localhost/amartha-fo/index.php/api/pembiayaan/survey?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"description": "survey API",
+			"descriptionFormat": "html",
+			"time": 1459499575174,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "879e49b6-6c32-0618-42a7-b525e8de7700",
+			"headers": "",
+			"url": "http://localhost/amartha-fo/index.php/api/pembiayaan/survey?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f47df37a-7e3e-b220-7cc7-b8dc3451d0ff",
+			"data": [
+				{
+					"key": "data_id",
+					"value": "21492",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_ke",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengajuan",
+					"value": "10000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tgl",
+					"value": "2016-04-20",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_date_accept",
+					"value": "2016-04-27",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tujuan",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_plafond",
+					"value": "2000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_jangkawaktu",
+					"value": "25",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_akad",
+					"value": "AHA",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_status",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_sector",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami",
+					"value": "Andi",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_tgllahir",
+					"value": "1990-02-03",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pekerjaan",
+					"value": "Buruh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_komoditas",
+					"value": "Bangunan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pendidikan",
+					"value": "SMP",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_anak",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_belumsekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tk",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaksekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaktamatsd",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sd",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_smp",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sma",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_kuliah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tanggungan",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_anggotart",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_masihsekolah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pendidikanistri",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pekerjaansuami",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jeniswc",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_bahanbakar",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_gas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_kulkas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_motor",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_ukuranrumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kondisirumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisatap",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisdinding",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_listrik",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_sumberair",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kepemilikan",
+					"value": "Milik Sendiri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_hargaperbulan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lahan",
+					"value": "Sawah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahlahan",
+					"value": "1000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_ternak",
+					"value": "Ayam",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahternak",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_tabungan",
+					"value": "500000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_deposito",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lain",
+					"value": "40000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_total",
+					"value": "540000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamilama",
+					"value": "2 Tahun",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suami",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istri",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrilama",
+					"value": "5 Bulan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainjenisusaha",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainlama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_total",
+					"value": "150000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_dapur",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_rekening",
+					"value": "20000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pulsa",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_kreditan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_arisan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pendidikan",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_umum",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_angsuranlain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_total",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_savingpower",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://lab.bilinedev.com/fo/index.php/api/pembiayaan/entry/?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"description": "Pendataan (Survey) untuk Pembiayaan Berkelanjutan",
+			"descriptionFormat": "html",
+			"time": 1459499385630,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a74750e2-996d-1f97-63d2-6d1f089f1f1f",
+			"headers": "",
+			"url": "http://localhost/amartha-fo/index.php/api/pembiayaan/survey?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "data_id",
+					"value": "21492",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_ke",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengajuan",
+					"value": "10000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tgl",
+					"value": "2016-04-01",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_date_accept",
+					"value": "2016-04-08",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_date_first",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tujuan",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_plafond",
+					"value": "2000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_jangkawaktu",
+					"value": "25",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_akad",
+					"value": "AHA",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_totalangsuran",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_angsuranpokok",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tabunganwajib",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_margin",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_angsuranke",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_status",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_sector",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami",
+					"value": "Andi",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_tgllahir",
+					"value": "1990-02-03",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pekerjaan",
+					"value": "Buruh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_komoditas",
+					"value": "Bangunan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pendidikan",
+					"value": "SMP",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_anak",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_belumsekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tk",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaksekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaktamatsd",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sd",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_smp",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sma",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_kuliah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tanggungan",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_anggotart",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_masihsekolah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pendidikanistri",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pekerjaansuami",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jeniswc",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_bahanbakar",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_gas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_kulkas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_motor",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_ukuranrumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kondisirumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisatap",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisdinding",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_listrik",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_sumberair",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kepemilikan",
+					"value": "Milik Sendiri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_hargaperbulan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lahan",
+					"value": "Sawah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahlahan",
+					"value": "1000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_ternak",
+					"value": "Ayam",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahternak",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_tabungan",
+					"value": "500000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_deposito",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lain",
+					"value": "40000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_total",
+					"value": "540000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamilama",
+					"value": "2 Tahun",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suami",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istri",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrilama",
+					"value": "5 Bulan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainjenisusaha",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainlama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_total",
+					"value": "150000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_dapur",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_rekening",
+					"value": "20000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pulsa",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_kreditan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_arisan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pendidikan",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_umum",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_angsuranlain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_total",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_savingpower",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_pembiayaan_sumber",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1459497975643,
+			"name": "http://lab.bilinedev.com/fo/index.php/api/pembiayaan/entry/?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"description": "testing pengajuan survey",
+			"collectionId": "f47df37a-7e3e-b220-7cc7-b8dc3451d0ff",
+			"responses": []
+		},
+		{
+			"id": "ca8df745-4dc2-8f60-7c58-7325091e3949",
+			"headers": "",
+			"url": "http://lab.bilinedev.com/fo/index.php/api/pembiayaan/survey?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f47df37a-7e3e-b220-7cc7-b8dc3451d0ff",
+			"data": [
+				{
+					"key": "data_id",
+					"value": "21426",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_ke",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengajuan",
+					"value": "2000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tgl",
+					"value": "2016-04-01",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_date_accept",
+					"value": "2016-04-08",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_date_first",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tujuan",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_plafond",
+					"value": "2000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_jangkawaktu",
+					"value": "25",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_akad",
+					"value": "AHA",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_totalangsuran",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_angsuranpokok",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_tabunganwajib",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_margin",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_angsuranke",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_status",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_sector",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan1_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan2_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan3_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_nama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_lama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_plafond",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_total",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pembiayaan4_status",
+					"value": "Berjalan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami",
+					"value": "Andi",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_tgllahir",
+					"value": "1990-02-03",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pekerjaan",
+					"value": "Buruh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_komoditas",
+					"value": "Bangunan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_suami_pendidikan",
+					"value": "SMP",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_anak",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_belumsekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tk",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaksekolah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tidaktamatsd",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sd",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_smp",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_sma",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_kuliah",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_keluarga_tanggungan",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_anggotart",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_masihsekolah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pendidikanistri",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_pekerjaansuami",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_jeniswc",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_bahanbakar",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_gas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_kulkas",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_popi_motor",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_ukuranrumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kondisirumah",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisatap",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenisdinding",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_jenislantai",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_listrik",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_sumberair",
+					"value": "A",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_kepemilikan",
+					"value": "Milik Sendiri",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_rmc_hargaperbulan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lahan",
+					"value": "Sawah",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahlahan",
+					"value": "1000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_ternak",
+					"value": "Ayam",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_jumlahternak",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_tabungan",
+					"value": "500000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_deposito",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_lain",
+					"value": "40000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_aset_total",
+					"value": "540000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suamilama",
+					"value": "2 Tahun",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_suami",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istri",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrijenisusaha",
+					"value": "jualan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_istrilama",
+					"value": "5 Bulan",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainjenisusaha",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_lainlama",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pendapatan_total",
+					"value": "150000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_dapur",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_rekening",
+					"value": "20000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pulsa",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_kreditan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_arisan",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_pendidikan",
+					"value": "10000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_umum",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_angsuranlain",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_pengeluaran_total",
+					"value": "50000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "data_savingpower",
+					"value": "100000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_pembiayaan_sumber",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://lab.bilinedev.com/fo/index.php/api/pembiayaan/survey?key=9f48e2d2bfc6e7ba980563dba3e48e53915c90ea",
+			"description": "testing pengajuan",
+			"descriptionFormat": "html",
+			"time": 1459495190431,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
