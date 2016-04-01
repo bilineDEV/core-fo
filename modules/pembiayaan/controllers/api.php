@@ -82,7 +82,6 @@ class Api extends Api_Controller {
   public function survey(){
         if( $this->input->post() )
         {
-
                 $id = $this->input->post('data_id');
                 //CALCULATE POPI INDEX
                 $score_popi=0;
@@ -208,27 +207,27 @@ class Api extends Api_Controller {
                 if($score_rmc <= 8){ $kategori_rmc = "D"; }
                 elseif($score_rmc > 8 AND $score_rmc <= 10){ $kategori_rmc = "C"; }
                 elseif($score_rmc > 10 AND $score_rmc <= 11){ $kategori_rmc = "B"; }
-                elseif($score_rmc > 11 AND $score_rmc <= 15){ $kategori_rmc = "A"; }
+                elseif($score_rmc > 11 AND $score_rmc <= 16){ $kategori_rmc = "A"; }
                 //END OF CALCULATE RMC INDEX
 
                 //Process the Form
+                $angsuranpokok = $this->input->post('data_plafond')/$this->input->post('data_jangkawaktu');
                 $data = array(
-                    //'data_client'               => $this->input->post('data_client'),
+                    'data_client'                 => $this->input->post('data_client'),
                     'data_ke'                     => $this->input->post('data_ke'),
                     'data_pengajuan'              => $this->input->post('data_pengajuan'),
                     'data_tgl'                    => $this->input->post('data_tgl'),
                     'data_date_accept'            => $this->input->post('data_date_accept'),
-                    'data_date_first'             => $this->input->post('data_date_first'),
-                    'data_tgl'                    => $this->input->post('data_tgl'),
+                    'data_date_first'             => null,
                     'data_tujuan'                 => $this->input->post('data_tujuan'),
                     'data_plafond'                => $this->input->post('data_plafond'),
                     'data_jangkawaktu'            => $this->input->post('data_jangkawaktu'),
                     'data_akad'                   => $this->input->post('data_akad'),
-                    'data_totalangsuran'          => $this->input->post('data_totalangsuran'),
-                    'data_angsuranpokok'          => $this->input->post('data_angsuranpokok'),
-                    'data_tabunganwajib'          => $this->input->post('data_tabunganwajib'),
-                    'data_margin'                 => $this->input->post('data_margin'),
-                    'data_angsuranke'             => $this->input->post('data_angsuranke'),
+                    'data_totalangsuran'          => "0",
+                    'data_angsuranpokok'          => $angsuranpokok,
+                    'data_tabunganwajib'          => "0",
+                    'data_margin'                 => "0",
+                    'data_angsuranke'             => "0",
                     'data_status'                 => $this->input->post('data_status'),
                     'data_sector'                 => $this->input->post('data_sector'),
 
@@ -324,55 +323,50 @@ class Api extends Api_Controller {
                     'data_pengeluaran_angsuranlain'   => $this->input->post('data_pengeluaran_angsuranlain'),
                     'data_pengeluaran_total'          => $this->input->post('data_pengeluaran_total'),
                     'data_savingpower'                => $this->input->post('data_savingpower'),
-                    'data_sumber_pembiayaan'          => $this->input->post('client_pembiayaan_sumber')
+                    'data_sumber_pembiayaan'          => null
 
                 );
 
                 if(!$id)
                 {
-                    $client_data = $this->clients_pembiayaan_model->insert($data);
+
+                    $client_data = $this->db->insert('tbl_pembiayaan', $data);
                     if($client_data){
                             $timestamp   = date("Y-m-d H:i:s");
                             $return      = array(
-                                'request_param'     => "",
-                                'status'            => "success",
-                                'error_message'     => "success",
-                                'data'              => array('saved' => "$timestamp", 'action' => "insert pembiayaan data.")
+                                'saved'     => "$timestamp",
+                                'action'    => "insert pembiayaan data."
                             );
                             $this->rest->set_data($return);
                     }else{
                             $return = array(
-                                'request_param'     => "",
-                                'status'            => "error",
-                                'error_message'     => "error",
-                                'data'              => array('saved' => "0000-00-00 00:00:00", 'action' => "insert client pembiayaan data: fails.")
+                                'saved'     => "0000-00-00 00:00:00",
+                                'action'    => "insert client pembiayaan data: fails."
                             );
-                            //$this->rest->set_data($return);
                              $this->rest->set_error('Insert client pembiayaan data: fails.');
                     }
                 }
                 else
                 {
-                    $client_data = $this->clients_pembiayaan_model->update($id, $data);
+                    $client_data = $this->db->update('tbl_pembiayaan', $data, array('data_id' => $id));
                     if($client_data){
                             $timestamp   = date("Y-m-d H:i:s");
+                            $timestamp   = date("Y-m-d H:i:s");
                             $return      = array(
-                                'request_param'     => "",
-                                'status'            => "success",
-                                'error_message'     => "success",
-                                'data'              => array('saved' => "$timestamp", 'action' => "update pembiayaan data.")
+                                'saved'     => "$timestamp",
+                                'action'    => "update pembiayaan data."
                             );
                             $this->rest->set_data($return);
                     }else{
                             $return = array(
-                                'request_param'     => "",
-                                'status'            => "error",
-                                'error_message'     => "error",
-                                'data'              => array('saved' => "0000-00-00 00:00:00", 'action' => "update client pembiayaan data: fails.")
+                                'saved'     => "0000-00-00 00:00:00",
+                                'action'    => "update client pembiayaan data: fails."
                             );
-                            //$this->rest->set_data($return);
                             $this->rest->set_error('Update client pembiayaan data: fails.');
                     }
+
+                    //echo $this->db->last_query();
+                    //die();
                 }
         }
         else
